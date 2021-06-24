@@ -99,3 +99,19 @@ Vedi esempio qua sotto.
 	transform: scale(150%);
 }
 /* --------------------------------------------------------- */
+.ex-10-icon {
+	animation-name: ex-10-rotation;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes ex-10-rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+/* --------------------------------------------------------- */
