@@ -136,3 +136,39 @@ Vedi esempio qua sotto.
 Nell'assegnazione la didascalia dell'esercizio dice "gira in senso orario fino ad arrivare a 3/4 e poi torna indietro velocemente" ma nell'animazione mostrata va oltre i 3/4...
 Va bene come l'ho fatto? */
 /* --------------------------------------------------------- */
+.ex-12-button:hover .ex-12-top-white {
+	animation-name: ex-11-top;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+	animation-name: ex-11-bottom;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+}
+
+@keyframes ex-11-top {
+	0% {
+		left: 10%;
+	}
+	50% {
+		left: calc(100% - 60px);
+	}
+	100% {
+		left: 10%;
+	}
+}
+
+@keyframes ex-11-bottom {
+	0% {
+		right: 20%;
+	}
+	50% {
+		right: calc(100% - 60px);
+	}
+	100% {
+		right: 20%;
+	}
+}
+/* --------------------------------------------------------- */
