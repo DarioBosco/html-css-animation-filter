@@ -56,6 +56,27 @@ Vedi esempio qua sotto.
 */
 /* --------------------------------------------------------- */
 .ex-6-img:hover {
-   filter:grayscale()
+	filter: grayscale();
 }
+/* --------------------------------------------------------- */
+.ex-7-img {
+	transition: 1s;
+}
+
+.ex-7-img:hover {
+	filter: sepia(0.5) grayscale(0.5);
+}
+/* Domanda per i teacher del pomeriggio: 
+Perchè se metto i filter su due linee separate non funziona correttamente? 
+Vedi esempio qua sotto.
+
+.ex-7-img {
+	transition: 1s;
+}
+
+.ex-7-img:hover {
+	filter: sepia(0.5);
+   filter: grayscale(0.5);
+}
+*/
 /* --------------------------------------------------------- */
