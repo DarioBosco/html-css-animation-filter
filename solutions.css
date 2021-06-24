@@ -41,19 +41,6 @@
 .ex-5-square:active {
 	transform: scale(50%);
 }
-/* Domanda per i teacher del pomeriggio: 
-Perchè se metto prima :active di :hover non funziona on-click? 
-Vedi esempio qua sotto.
-
-.ex-5-square:active {
-	transform: scale(50%);
-}
-
-.ex-5-square:hover {
-	transform: scale(200%);
-}
-
-*/
 /* --------------------------------------------------------- */
 .ex-6-img:hover {
 	filter: grayscale();
@@ -66,19 +53,6 @@ Vedi esempio qua sotto.
 .ex-7-img:hover {
 	filter: sepia(0.5) grayscale(0.5);
 }
-/* Domanda per i teacher del pomeriggio: 
-Perchè se metto i filter su due linee separate non funziona correttamente? 
-Vedi esempio qua sotto.
-
-.ex-7-img {
-	transition: 1s;
-}
-
-.ex-7-img:hover {
-	filter: sepia(0.5);
-   filter: grayscale(0.5);
-}
-*/
 /* --------------------------------------------------------- */
 .ex-8-img {
 	transition: 2s;
@@ -100,10 +74,7 @@ Vedi esempio qua sotto.
 }
 /* --------------------------------------------------------- */
 .ex-10-icon {
-	animation-name: ex-10-rotation;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation: ex-10-rotation 1s infinite linear;
 }
 
 @keyframes ex-10-rotation {
@@ -116,8 +87,7 @@ Vedi esempio qua sotto.
 }
 /* --------------------------------------------------------- */
 .ex-11-icon:hover {
-	animation-name: ex-11-rotation;
-	animation-duration: 2s;
+	animation: ex-11-rotation 2s;
 }
 
 @keyframes ex-11-rotation {
@@ -131,21 +101,13 @@ Vedi esempio qua sotto.
 		transform: rotate(0deg);
 	}
 }
-
-/*  Domanda per i teacher del pomeriggio:
-Nell'assegnazione la didascalia dell'esercizio dice "gira in senso orario fino ad arrivare a 3/4 e poi torna indietro velocemente" ma nell'animazione mostrata va oltre i 3/4...
-Va bene come l'ho fatto? */
 /* --------------------------------------------------------- */
 .ex-12-button:hover .ex-12-top-white {
-	animation-name: ex-12-top;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	animation: ex-12-top 2s linear;
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
-	animation-name: ex-12-bottom;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	animation: ex-12-bottom 2s linear;
 }
 
 @keyframes ex-12-top {
@@ -173,15 +135,11 @@ Va bene come l'ho fatto? */
 }
 /* --------------------------------------------------------- */
 .ex-13-button:hover .ex-13-top-white {
-	animation-name: ex-13-top;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	animation: ex-13-top 2s linear;
 }
 
 .ex-13-button:hover .ex-13-bottom-white {
-	animation-name: ex-13-bottom;
-	animation-duration: 2s;
-	animation-timing-function: linear;
+	animation: ex-13-bottom 2s linear;
 }
 
 @keyframes ex-13-top {
@@ -237,11 +195,3 @@ Va bene come l'ho fatto? */
 		right: 20%;
 	}
 }
-
-/* .debug .ex-13-top-white {
-	background: red;
-}
-
-.debug .ex-13-bottom-white {
-	background: green;
-} */
