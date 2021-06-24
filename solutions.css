@@ -80,3 +80,12 @@ Vedi esempio qua sotto.
 }
 */
 /* --------------------------------------------------------- */
+.ex-8-img {
+   transition: 2s;
+}
+
+.ex-8-img:hover {
+   border-radius: 20px;
+   filter: sepia(0.5) grayscale(0.5);
+}
+/* --------------------------------------------------------- */
