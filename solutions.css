@@ -30,3 +30,28 @@
 	opacity: 0;
 }
 /* --------------------------------------------------------- */
+.ex-5-square {
+	transition: 1s;
+}
+
+.ex-5-square:hover {
+	transform: scale(200%);
+}
+
+.ex-5-square:active {
+	transform: scale(50%);
+}
+/* Domanda per i teacher del pomeriggio: 
+Perchè se metto prima :active di :hover non funziona on-click? 
+Vedi esempio qua sotto.
+
+.ex-5-square:active {
+	transform: scale(50%);
+}
+
+.ex-5-square:hover {
+	transform: scale(200%);
+}
+
+*/
+/* --------------------------------------------------------- */
