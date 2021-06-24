@@ -115,3 +115,24 @@ Vedi esempio qua sotto.
 	}
 }
 /* --------------------------------------------------------- */
+.ex-11-icon:hover {
+	animation-name: ex-11-rotation;
+	animation-duration: 2s;
+}
+
+@keyframes ex-11-rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	90% {
+		transform: rotate(270deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/*  Domanda per i teacher del pomeriggio:
+Nell'assegnazione la didascalia dell'esercizio dice "gira in senso orario fino ad arrivare a 3/4 e poi torna indietro velocemente" ma nell'animazione mostrata va oltre i 3/4...
+Va bene come l'ho fatto? */
+/* --------------------------------------------------------- */
