@@ -172,31 +172,53 @@ Va bene come l'ho fatto? */
 	}
 }
 /* --------------------------------------------------------- */
-/* .ex-12-button:hover .ex-13-top-white {
-	animation-name: ex-11-top;
+.ex-13-button:hover .ex-13-top-white {
+	animation-name: ex-13-top;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 }
 
-.ex-12-button:hover .ex-13-bottom-white {
-	animation-name: ex-11-bottom;
+.ex-13-button:hover .ex-13-bottom-white {
+	animation-name: ex-13-bottom;
 	animation-duration: 2s;
 	animation-timing-function: linear;
 }
 
 @keyframes ex-13-top {
 	0% {
+		top: -10px;
 		left: 10%;
 	}
-	50% {
-		left: calc(100% - 60px);
+	20% {
+		top: -10px;
+		left: calc(100% - 30px);
+	}
+	40% {
+		top: calc(100% - 10px);
+		left: calc(100% - 30px);
+	}
+	60% {
+		top: calc(100% - 10px);
+		left: calc(0% - 30px);
+	}
+	80% {
+		top: -10px;
+		left: calc(0% - 30px);
 	}
 	100% {
+		top: -10px;
 		left: 10%;
 	}
 }
 
-@keyframes ex-13-bottom {
+.debug .ex-13-top-white {
+	background: red;
+}
+
+.debug .ex-13-bottom-white {
+	background: green;
+}
+/* @keyframes ex-13-bottom {
 	0% {
 		right: 20%;
 	}
