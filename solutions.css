@@ -191,19 +191,19 @@ Va bene come l'ho fatto? */
 	}
 	20% {
 		top: -10px;
-		left: calc(100% - 30px);
+		left: calc(100% - 10%);
 	}
 	40% {
 		top: calc(100% - 10px);
-		left: calc(100% - 30px);
+		left: calc(100% - 10%);
 	}
 	60% {
 		top: calc(100% - 10px);
-		left: calc(0% - 30px);
+		left: calc(0% - 10%);
 	}
 	80% {
 		top: -10px;
-		left: calc(0% - 30px);
+		left: calc(0% - 10%);
 	}
 	100% {
 		top: -10px;
@@ -211,21 +211,37 @@ Va bene come l'ho fatto? */
 	}
 }
 
-.debug .ex-13-top-white {
+@keyframes ex-13-bottom {
+	0% {
+		bottom: -10px;
+		right: 20%;
+	}
+	20% {
+		bottom: -10px;
+		right: calc(100% - 20%);
+	}
+	40% {
+		bottom: calc(100% - 10px);
+		right: calc(100% - 20%);
+	}
+	60% {
+		bottom: calc(100% - 10px);
+		right: calc(0% - 20%);
+	}
+	80% {
+		bottom: -10px;
+		right: calc(0% - 20%);
+	}
+	100% {
+		bottom: -10px;
+		right: 20%;
+	}
+}
+
+/* .debug .ex-13-top-white {
 	background: red;
 }
 
 .debug .ex-13-bottom-white {
 	background: green;
-}
-/* @keyframes ex-13-bottom {
-	0% {
-		right: 20%;
-	}
-	50% {
-		right: calc(100% - 60px);
-	}
-	100% {
-		right: 20%;
-	}
 } */
